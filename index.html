@@ -15,8 +15,13 @@
   <meta name="theme-color" content="#e6a93f">
 
   <title>Player</title>
+  <link rel="preload" href="./fonts/SFUIDisplay-Regular.woff2" as="font" crossorigin type="font/woff2">
+  <link rel="preload" href="./fonts/SFUIDisplay-Semibold.woff2" as="font" crossorigin type="font/woff2">
+  <link rel="preload" href="./fonts/SFUIDisplay-Light.woff2" as="font" crossorigin type="font/woff2">
 
   <link rel="stylesheet" href="./style/index.css">
+
+  <script src=".js/index.js" defer></script>
 </head>
 
 <body>
@@ -44,113 +49,123 @@
   <section class="catalog">
     <h2 class="visually-hidden">Track-list</h2>
     <div class="catalog__container">
-      <button class="catalog__item track">
-        <div class="track__img-wrap">
-          <img class="track__poster" src="./img/photo_12.jpg" alt="The weeknd-Save your tears" width="180" height="180">
-        </div>
-        <div class="track__info track-info">
-          <p class="track-info__title">Follow You</p>
-          <p class="track-info__artist">Imagine Dragons</p>
-        </div>
-      </button>
-
-      <button class="catalog__item track">
+      <!-- <button class="catalog__item track" data-track="audio/The Weeknd - Save Your Tears.mp3">
         <div class="track__img-wrap">
           <img class="track__poster" src="./img/photo_01.jpg" alt="The weeknd-Save your tears" width="180" height="180">
         </div>
         <div class="track__info track-info">
+          <p class="track-info__title">Save your tears</p>
+          <p class="track-info__artist">The weeknd</p>
+        </div>
+      </button> -->
+
+      <!-- <button class="catalog__item track" data-track="audio/Imagine Dragons - Follow You.mp3">
+        <div class="track__img-wrap">
+          <img class="track__poster" src="./img/photo_02.jpg" alt="The weeknd-Save your tears" width="180" height="180">
+        </div>
+        <div class="track__info track-info">
           <p class="track-info__title">Follow You</p>
           <p class="track-info__artist">Imagine Dragons</p>
         </div>
       </button>
 
-      <button class="catalog__item track">
+      <button class="catalog__item track" data-track="audio/Tove Lo - How Long.mp3">
         <div class="track__img-wrap">
           <img class="track__poster" src="./img/photo_03.jpg" alt="The weeknd-Save your tears" width="180" height="180">
         </div>
         <div class="track__info track-info">
-          <p class="track-info__title">Follow You</p>
-          <p class="track-info__artist">Imagine Dragons</p>
+          <p class="track-info__title">Tove Lo</p>
+          <p class="track-info__artist">How Long</p>
         </div>
       </button>
 
-      <button class="catalog__item track">
+      <button class="catalog__item track" data-track="audio/Tom Odell - Another Love.mp3">
         <div class="track__img-wrap">
           <img class="track__poster" src="./img/photo_04.jpg" alt="The weeknd-Save your tears" width="180" height="180">
         </div>
         <div class="track__info track-info">
-          <p class="track-info__title">Follow You</p>
-          <p class="track-info__artist">Imagine Dragons</p>
+          <p class="track-info__title">Another Love</p>
+          <p class="track-info__artist">Tom Odell</p>
         </div>
       </button>
 
-      <button class="catalog__item track">
+      <button class="catalog__item track" data-track="audio/Lana Del Rey - Born To Die.mp3">
         <div class="track__img-wrap">
           <img class="track__poster" src="./img/photo_05.jpg" alt="The weeknd-Save your tears" width="180" height="180">
         </div>
         <div class="track__info track-info">
-          <p class="track-info__title">Follow You</p>
-          <p class="track-info__artist">Imagine Dragons</p>
+          <p class="track-info__title">Born to Die</p>
+          <p class="track-info__artist">Lana Del Rey</p>
         </div>
       </button>
 
-      <button class="catalog__item track">
+      <button class="catalog__item track" data-track="audio/Adele - Hello.mp3">
         <div class="track__img-wrap">
           <img class="track__poster" src="./img/photo_06.jpg" alt="The weeknd-Save your tears" width="180" height="180">
         </div>
         <div class="track__info track-info">
-          <p class="track-info__title">Follow You</p>
-          <p class="track-info__artist">Imagine Dragons</p>
+          <p class="track-info__title">Hello</p>
+          <p class="track-info__artist">Adele</p>
         </div>
       </button>
 
-      <button class="catalog__item track">
+      <button class="catalog__item track" data-track="audio/Tom Odell - Can't Pretend.mp3">
         <div class="track__img-wrap">
           <img class="track__poster" src="./img/photo_07.jpg" alt="The weeknd-Save your tears" width="180" height="180">
         </div>
         <div class="track__info track-info">
-          <p class="track-info__title">Follow You</p>
-          <p class="track-info__artist">Imagine Dragons</p>
+          <p class="track-info__title">Can't Pretend</p>
+          <p class="track-info__artist">Tom Odell</p>
         </div>
       </button>
 
-      <button class="catalog__item track">
+      <button class="catalog__item track" data-track="audio/Lana Del Rey - Young And Beautiful.mp3">
         <div class="track__img-wrap">
           <img class="track__poster" src="./img/photo_08.jpg" alt="The weeknd-Save your tears" width="180" height="180">
         </div>
         <div class="track__info track-info">
-          <p class="track-info__title">Follow You</p>
-          <p class="track-info__artist">Imagine Dragons</p>
+          <p class="track-info__title">Young and Beautiful</p>
+          <p class="track-info__artist">Lana Del Rey</p>
         </div>
       </button>
 
-      <button class="catalog__item track">
+      <button class="catalog__item track" data-track="audio/Adele - Someone Like You.mp3">
         <div class="track__img-wrap">
           <img class="track__poster" src="./img/photo_09.jpg" alt="The weeknd-Save your tears" width="180" height="180">
         </div>
         <div class="track__info track-info">
-          <p class="track-info__title">Follow You</p>
-          <p class="track-info__artist">Imagine Dragons</p>
+          <p class="track-info__title">Someone Like You</p>
+          <p class="track-info__artist">Adele</p>
         </div>
       </button>
 
-      <button class="catalog__item track">
+      <button class="catalog__item track" data-track="audio/Imagine Dragons - Natural.mp3">
         <div class="track__img-wrap">
           <img class="track__poster" src="./img/photo_10.jpg" alt="The weeknd-Save your tears" width="180" height="180">
         </div>
         <div class="track__info track-info">
-          <p class="track-info__title">Follow You</p>
+          <p class="track-info__title">Natural</p>
           <p class="track-info__artist">Imagine Dragons</p>
         </div>
       </button>
 
-      <button class="catalog__item track track_active">
+      <button class="catalog__item track" data-track="audio/Drake - Laugh Now Cry Later.mp3">
         <div class="track__img-wrap">
           <img class="track__poster" src="./img/photo_11.jpg" alt="The weeknd-Save your tears" width="180" height="180">
         </div>
         <div class="track__info track-info">
-          <p class="track-info__title">Follollow Youollow Youow You</p>
-          <p class="track-info__artist">Imollow Youagine Dragons</p>
+          <p class="track-info__title">laugh now cry later</p>
+          <p class="track-info__artist">Drake</p>
+        </div>
+      </button>
+
+      <button class="catalog__item track track_active" data-track="audio/Madonna - Frozen.mp3">
+        <div class="track__img-wrap">
+          <img class="track__poster" src="./img/photo_12.jpg" alt="The weeknd-Save your tears" width="180" height="180">
+        </div>
+        <div class="track__info track-info">
+          <p class="track-info__title">Frozen</p>
+          <p class="track-info__artist">Madonna</p>
         </div>
       </button>
 
@@ -160,27 +175,27 @@
           <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" />
         </svg>
 
-      </button>
+      </button> -->
     </div>
+    
   </section>
-
-  <section class="player player_active">
+  <section class="player">
     <h2 class="visually-hidden">Player</h2>
     <div class="player__container">
-      <div class="player__track-info track-info">
+      <div class="player__track-info track-info track-info_mobile-center">
         <p class="track-info__title">Follow You</p>
         <p class="track-info__artist">Imagine Dragons</p>
       </div>
       <div class="player__controller">
-        <button class="player__icon player__icon_stop"></button>
-        <button class="player__icon player__icon_prev"></button>
-        <button class="player__icon player__icon_pause"></button>
-        <button class="player__icon player__icon_next"></button>
-        <button class="player__icon player__icon_like"></button>
+        <button class="player__icon player__icon_stop player__controller-stop"></button>
+        <button class="player__icon player__icon_prev player__controller-prev"></button>
+        <button class="player__icon player__icon_pause player__controller-pause"></button>
+        <button class="player__icon player__icon_next player__controller-next"></button>
+        <button class="player__icon player__icon_like player__controller-like"></button>
       </div>
       <div class="player__progress-wrap">
         <div class="player__progress">
-          <input class="player__progress-input" type="range" min="0" max="100" value="0">
+          <input class="player__progress-input" type="range" min="0" max="1000" value="0">
         </div>
         <p class="player__time">
           <span class="player__time-passed">0:24</span>
@@ -192,10 +207,11 @@
         <div class="player__volume">
           <input class="player__volume-input" type="range" type="range" min="0" max="100" value="100">
         </div>
-        <button class="player__icon player__icon_mute"></button>
+        <button class="player__icon player__icon_mute player__controller-mute"></button>
       </div>
     </div>
   </section>
 </body>
+
 
 </html>

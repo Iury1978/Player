@@ -56,10 +56,14 @@ input, button, textarea {
   transform: scale(0);
 }
 
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 217px;
+  }
+}
 
-
-/* .container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 130px;
-} */
+@media (max-width: 740px) {
+  body {
+    padding-bottom: 187px;
+  }
+}

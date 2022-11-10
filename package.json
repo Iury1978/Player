@@ -1,0 +1,26 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iury1978/Player.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iury1978/Player/issues"
+  },
+  "homepage": "https://github.com/Iury1978/Player#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cssimport": "^7.0.0",
+    "gulp-group-css-media-queries": "^1.2.2"
+  }
+}
