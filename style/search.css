@@ -30,3 +30,9 @@
   transform: translateY(-50%);
   line-height: 0;
 }
+
+.search__nothing {
+  font-size: 25px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
